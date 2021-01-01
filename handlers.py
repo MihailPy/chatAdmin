@@ -77,4 +77,4 @@ async def send_welcome(message: Message):
     botme = await bot.get_chat_member(message.chat.id, me.id)
     print(botme)
     print(message)
-    await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.")
+    await message.reply("Hi!\nI'm Bot!")

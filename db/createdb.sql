@@ -1,3 +1,10 @@
+SELECT host, user, password FROM mysql.user;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mysqlrootpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'mysqlrootpassword';
+
+FLUSH PRIVILEGES;
+
+
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
