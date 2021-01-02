@@ -1,6 +1,6 @@
 SELECT host, user, password FROM mysql.user;
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mysqlrootpassword';
-GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'mysqlrootpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Fmk5WaFsLOGGzoEn';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'Fmk5WaFsLOGGzoEn';
 
 FLUSH PRIVILEGES;
 
