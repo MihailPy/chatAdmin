@@ -1,6 +1,20 @@
 version: "3"
 
 services:
+  bot:
+    build: ./
+    # ports: 
+    volumes:
+      -  ./:/home
+    depends_on:
+      - db
+    environment:
+      TOKEN:  
+      HOST: db
+      PORT: 3306
+      USER: root
+      PASSWORD: mysqlrootpassword
+      admin_id: 1339488902
   db:
     build: ./db
     restart: always
@@ -10,23 +24,3 @@ services:
       - ./db/databases:/var/lib/mysql
     ports: 
       - 3306:3306
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
-  bot:
-    build: ./
-    # ports: 
-    volumes:
-      -  ./:/home
-    depends_on:
-      db:
-        condition: service_started
-    environment:
-      TOKEN:  
-      HOST: db
-      PORT: 3306
-      USER: root
-      PASSWORD: mysqlrootpassword
-      admin_id: 1339488902
