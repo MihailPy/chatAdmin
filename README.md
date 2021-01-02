@@ -6,7 +6,7 @@ sudo apt install docker.io
 sudo apt install docker-compose
 ```
 ```
-git push pull https://github.com/MihailPy/chatAdmin.git
+git clone https://github.com/MihailPy/chatAdmin.git
 ```
 Теперь нужно отредактировть два файла.
 
