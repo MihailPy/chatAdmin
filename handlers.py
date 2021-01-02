@@ -7,7 +7,14 @@ from aiogram.dispatcher.filters import Command, Text
 import re
 import datetime
 import pytz
-import db
+from time import sleep
+while True:
+    try:
+        import db
+        break
+    except:
+        pass
+    sleep(1)
 
 def list_to_dict(user_list):
         user_list = list(user_list[0][0:])

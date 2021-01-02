@@ -18,8 +18,8 @@ services:
   db:
     build: ./db
     restart: always
-    # environment:
-    #   MYSQL_ROOT_PASSWORD: pass    
+    environment:
+      MYSQL_ROOT_PASSWORD: pass    
     volumes:
       - ./db/databases:/var/lib/mysql
     ports: 
