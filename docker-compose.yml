@@ -19,7 +19,7 @@ services:
     build: ./db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD:  Fmk5WaFsLOGGzoEn  
+      MYSQL_ROOT_PASSWORD:  Fmk5WaFsLOGGzoEn 
     volumes:
       - ./db/databases:/var/lib/mysql
     ports: 
